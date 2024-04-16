@@ -101,9 +101,21 @@ namespace DAY2_SyntaxEssentials
                     Console.WriteLine("Needs improvement!");
                     break;
             }
-                    // Task 4: Loops
-                    // For loop
-                    for (int i = 0; i < 5; i++)
+            //equivalent using switch expression
+            char myGrade = 'A';
+            string messagee = myGrade switch
+            {
+                'A' => "Excellent!",
+                'B' => "Good!",
+                'C' => "Fair!",
+                _ => "Needs improvement!"
+            };
+
+            Console.WriteLine(message);
+
+            // Task 4: Loops
+            // For loop
+            for (int i = 0; i < 5; i++)
                     {
                         Console.WriteLine($"For loop iteration {i}");
                     }
